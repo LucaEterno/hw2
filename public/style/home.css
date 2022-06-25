@@ -1,0 +1,141 @@
+main{
+    margin: 100px 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: flex-start;
+}
+
+.column{
+    width: 47.5%;
+}
+
+main div{
+    background: var(--foreground);
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--shadow);
+}
+
+.futuri div, .passati div{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+    background: var(--foreground);
+    box-shadow: 0 0 8px var(--shadow);
+}
+
+main p{
+    margin: 8px;
+}
+
+main h3{
+    font-weight: bold;
+    margin: 8px;
+    color: #6a5e5e;
+}
+
+main h1{
+    color: var(--hl_text);
+    font-weight: bold;
+    margin: 8px;
+}
+
+#filter {
+    color: var(--h1_text);
+    font-weight: bold;
+    background: var(--foreground);
+    padding: 8px;
+    border: 2px solid var(--foreground);
+    border-radius: 4px;
+    /*width: 100%;*/
+}
+
+#filter:focus{
+    border: 2px solid rgb(189, 30, 89);
+    outline-width: 0;
+}
+
+input[type=button] {
+    color: rgb(189, 30, 89);
+    font-size: 14px;
+    background-color: white;
+    border: 2px solid rgb(189, 30, 89);
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+input[type=button]:hover {
+    color: white;
+    background-color: rgb(189, 30, 89);
+}
+
+
+.infoMod{
+    display: none;
+}
+
+.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.infobox{
+    width: 50%;
+    padding: 8px;
+    border-radius: 10px;
+    background: var(--foreground);
+    box-shadow: 0 0 8px var(--shadow);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infobox div{
+    /* background: var(--foreground); */
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--shadow);
+    width: 100%;
+}
+
+.infobox h1{
+    color: var(--hl_text);
+    font-weight: bold;
+    margin: 20px 8px;
+}
+
+.infobox p{
+    color: #6a5e5e;
+    font-weight: bold;
+    margin: 16px 8px;
+}
+
+.modale input[type=button]{
+    width: 50%;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgb(189, 30, 89);
+}
+
+.modale input[type=button]:hover {
+    color: rgb(189, 30, 89);
+    background-color: white;
+}

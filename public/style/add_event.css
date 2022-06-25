@@ -1,0 +1,84 @@
+main {
+    margin: 100px 10px;
+    width: 90%;
+    background: var(--foreground);
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--shadow);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main h1{
+    color: var(--hl_text);
+    font-size: 32px;
+}
+    
+.section{
+    color: white;
+    background-color:rgb(189, 30, 89);
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--shadow);
+    margin: 50px 0;
+    width: 42.5%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+    
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form div{
+    width: 100%;
+    margin: 5px 10px;
+}
+
+input[type=text], input[type=date], select {
+    background: var(--background);
+    padding: 8px;
+    border: 2px solid var(--background);
+    color: var(--text);
+    border-radius: 4px;
+    width: 100%;
+}
+
+input[type=text]:focus, input[type=date]:focus, select:focus{
+    border: 2px solid var(--hl_text);
+    outline-width: 0;
+}
+
+input[type=submit] {
+    color: rgb(189, 30, 89);
+    font-size: 14px;
+    background-color: white;
+    border: 2px solid rgb(189, 30, 89);
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover{
+    color: white;
+    background-color: rgb(189, 30, 89);
+}
+
+main .error {
+    padding: 4px 10px;
+    background: #ffe2e2;
+    border-radius: 7px;
+    color: #fa1c2c;
+    margin: 5px;
+    font-size: 12px;
+    display: inline-block;
+}

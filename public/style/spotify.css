@@ -1,0 +1,145 @@
+.api{
+margin: 100px 10px;
+width: 90%;
+background: var(--foreground);
+border-radius: 10px;
+box-shadow: 0 0 8px var(--shadow);
+
+display: flex;
+flex-direction: row;
+justify-content:space-around;
+align-items: flex-start;
+}
+
+.contenitor{
+    color: white;
+    background-color:rgb(189, 30, 89);
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--shadow);
+    margin: 50px 0;
+    width: 42.5%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+form div{
+    width: 100%;
+    margin: 5px 10px;
+}
+
+form input{
+    width: 100%;
+}
+
+input[type=text]{
+    background: var(--background);
+    padding: 8px;
+    border: 2px solid var(--background);
+    color: var(--text);
+    border-radius: 4px;
+}
+
+input[type=text]:focus{
+    border: 2px solid var(--hl_text);
+    outline-width: 0;
+}
+
+input[type=submit], input[type=button] {
+    color: white;
+    font-size: 14px;
+    background-color: rgb(189, 30, 89);
+    border: 2px solid white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+    color: rgb(189, 30, 89);
+    background-color: white;
+}
+  
+#playlist{
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.playlistMod, .trackMod{
+    display: none;
+}
+
+.modaleT{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+  
+.modaleT img{
+    height: 250px;
+    width: 250px;
+}
+
+.modaleT div{
+    width: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modaleT input[type=button]{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.modaleP{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-around;
+    z-index: 20;
+}
+  
+.modaleP img{
+    height: 150px;
+    width: 150px;
+}
+  
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 850px) {
+    .modaleP img{
+        height: 100px;
+        width: 100px;
+    }
+}
